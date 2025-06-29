@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-wrapper {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.branding .logo {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.game-title {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.difficulty-panel {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.drop-display {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.drop {
+  width: 60px;
+  height: 80px;
+  background: rgb(119, 168, 187);
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  position: relative;
+  cursor: pointer;
+}
+
+.drop:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.score-panel {
+  margin: 10px 0;
+}
+
+.score-box {
+  background-color: #ffc907;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.feedback {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0;
+  min-height: 24px;
+}
+
+.play-again-btn {
+  background: #ffc907;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.play-again-btn:hover {
+  background: #e6b800;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #f9f9f9;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #2e9df7;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .drop-display {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

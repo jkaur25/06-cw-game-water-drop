@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Water Drop Game</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-wrapper">
+    <header class="branding">
+      <img src="img/cw_logo-horizontal.png" alt="charity: water logo" class="logo"/>
+    </header>
+
+    <h1 class="game-title">WATER DROP</h1>
+
+    <div class="difficulty-panel">
+      <label for="difficulty-select">Difficulty:</label>
+      <select id="difficulty-select">
+        <option value="easy">Easy (5 pts)</option>
+        <option value="normal" selected>Normal (10 pts)</option>
+        <option value="hard">Hard (15 pts)</option>
+      </select>
+    </div>
+
+    <div class="drop-display">
+      <div class="drop" data-index="0"></div>
+      <div class="drop" data-index="1"></div>
+      <div class="drop" data-index="2"></div>
+    </div>
+
+    <div class="score-panel">
+      <button class="score-box">SCORE: <span id="score">0</span></button>
+    </div>
+
+    <p class="feedback" id="feedback"></p>
+
+    <button id="play-again" class="play-again-btn" style="display:none;">PLAY AGAIN</button>
+
+    <footer class="footer">
+      <p>Learn more about <a href="https://www.charitywater.org" target="_blank">charity: water</a> or <a href="https://www.charitywater.org/donate" target="_blank">donate today</a> to help provide clean water worldwide.</p>
+    </footer>
+
+    <!-- Sound effects -->
+    <audio id="good-sound" src="sounds/good.wav"></audio>
+    <audio id="bad-sound" src="sounds/bad.wav"></audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </div>
+</body>
+</html>
